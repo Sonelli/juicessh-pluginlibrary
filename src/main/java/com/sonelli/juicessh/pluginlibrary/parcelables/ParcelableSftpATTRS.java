@@ -3,7 +3,7 @@ package com.sonelli.juicessh.pluginlibrary.parcelables;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.jcraft.jsch.SftpATTRS;
+//import com.jcraft.jsch.SftpATTRS;
 
 
 public final class ParcelableSftpATTRS implements Parcelable {
@@ -28,7 +28,7 @@ public final class ParcelableSftpATTRS implements Parcelable {
     private String[] getExtended;
     private String toString;
 
-    public ParcelableSftpATTRS(SftpATTRS attrs) {
+/*    public ParcelableSftpATTRS(SftpATTRS attrs) {
         getPermissionsString = attrs.getPermissionsString();
         getAtimeString = attrs.getAtimeString();
         getMtimeString = attrs.getMtimeString();
@@ -48,7 +48,7 @@ public final class ParcelableSftpATTRS implements Parcelable {
         getMTime = attrs.getMTime();
         getExtended = attrs.getExtended();
         toString = attrs.toString();
-    }
+    } */
 
     public String getPermissionsString() {
         return getPermissionsString;

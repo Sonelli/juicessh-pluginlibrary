@@ -3,7 +3,7 @@ package com.sonelli.juicessh.pluginlibrary.parcelables;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.jcraft.jsch.ChannelSftp;
+//import com.jcraft.jsch.ChannelSftp;
 
 
 public class ParcelableLsEntry implements Parcelable{
@@ -13,12 +13,12 @@ public class ParcelableLsEntry implements Parcelable{
     private String longname;
     private String toString;
 
-    public ParcelableLsEntry(ChannelSftp.LsEntry lsEntry) {
+/*    public ParcelableLsEntry(ChannelSftp.LsEntry lsEntry) {
         attrs = new ParcelableSftpATTRS(lsEntry.getAttrs());
         filename = lsEntry.getFilename();
         longname = lsEntry.getLongname();
         toString = lsEntry.toString();
-    }
+    } */
 
     public ParcelableSftpATTRS getAttrs() {
         return attrs;
