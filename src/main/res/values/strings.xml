@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JuiceSSH-PluginLibrary</string>
+    <string name="juicessh_version">JuiceSSH Version</string>
+    <string name="juicessh_wrong_version">This JuiceSSH plugin requires that JuiceSSH %s (or newer) be installed. Please upgrade your copy of JuiceSSH.</string>
+    <string name="install">Install</string>
+    <string name="cancel">Cancel</string>
+    <string name="security_error">Security Error</string>
+    <string name="juicessh_permissions_not_granted">This plugin does not have the necessary permissions required to interact with JuiceSSH. This can happen if JuiceSSH is installed after the plugin. To resolve this you will need to reinstall the plugin.\n\nPress OK to launch the plugin Play Store page.</string>
+    <string name="ok">OK</string>
+    <string name="play_store_not_installed">Play Store not installed</string>
+</resources>

@@ -1,0 +1,48 @@
+def home = "$System.env.HOME"
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.0'
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+version = "1.0.13"
+group = "com.sonelli"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:21.0.0'
+    compile project(':jsch')
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 19
+    }
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            // Deploy to a local repository
+            repository(url: "file:///" + home + "/Dropbox/Sonelli/Maven")
+            pom.groupId = 'com.sonelli'
+            pom.artifactId = 'juicessh-pluginlibrary'
+            pom.version = '1.0.13'
+            pom.packaging = 'aar'
+        }
+    }
+}
